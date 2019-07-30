@@ -17,6 +17,32 @@
       // Set port to avoid 'Cannot connect to runtime process, timeout after 10000 ms' error
       "port": 4000
       // "trace": "verbose",
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest All",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["--runInBand"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Jest Current File",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["${fileBasenameNoExtension}", "--config", "jest.config.js"],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "disableOptimisticBPs": true,
+      "windows": {
+        "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+      }
     }
   ]
 }
