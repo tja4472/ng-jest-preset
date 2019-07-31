@@ -117,7 +117,7 @@ rm ./src/test.ts
 ### 5.2 Install jest-preset-angular
 
 ```sh
-npm install --save-dev --save-exact jest@24.8.0 @types/jest@24.0.15 jest-preset-angular@7.1.1
+npm install --save-dev --save-exact jest@24.8.0 @types/jest@24.0.16 jest-preset-angular@7.1.1
 ```
 
 ### 5.3 Edit tsconfig.spec.json
